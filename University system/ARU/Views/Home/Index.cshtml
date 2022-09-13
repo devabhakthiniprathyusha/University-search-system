@@ -1,0 +1,134 @@
+﻿@{
+    ViewData["Title"] = "Student Search";
+}
+
+@model ARU.Model.SearchViewModel
+
+@if (!String.IsNullOrWhiteSpace(Model.Message))
+{
+    <div class="toast" id="warning-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="mr-auto">Warning</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="toast-body">
+            @Model.Message
+        </div>
+    </div>
+}
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ARU</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <form class="search" asp-controller="Home" asp-action="Search" method="post">
+                    <div class="input-group" id="search-group">
+                        <input type="text" class="form-control" placeholder="Search" aria-label="Search" asp-for="Title" />
+                        <button class="btn btn-sm" type="submit">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="container-search">
+    <div class="search-filters">
+        <form class="filters" asp-controller="Home" asp-action="Index" method="post">
+            <h1 class="header">Campus</h1>
+
+            <select class="custom-select" asp-for="Cambridge" asp-items="Model.AvailableUnderGraduate">
+                <option selected="selected" value="">Cambridge</option>
+            </select>
+
+            <select class="custom-select" asp-for="Chelmsford" asp-items="Model.AvailablePostGraduate">
+                <option selected="selected" value="">Chelmsford</option>
+            </select>
+
+            <select class="custom-select" asp-for="Peterborough" asp-items="Model.AvailablePhD">
+                <option selected="selected" value="">Peterborough</option>
+            </select>
+
+            <select class="custom-select" asp-for="London" asp-items="Model.AvailablePostDoctorate">
+                <option selected="selected" value="">London</option>
+            </select>
+            <h1 class="header">Courses</h1>
+
+            <select class="custom-select" asp-for="UnderGraduate" asp-items="Model.AvailableUnderGraduate">
+                <option selected="selected" value="">Under Graduate</option>
+            </select>
+
+            <select class="custom-select" asp-for="PostGraduate" asp-items="Model.AvailablePostGraduate">
+                <option selected="selected" value="">Post Graduate</option>
+            </select>
+
+            <select class="custom-select" asp-for="PhD" asp-items="Model.AvailablePhD">
+                <option selected="selected" value="">Ph D</option>
+            </select>
+
+            <select class="custom-select" asp-for="PostDoctorate" asp-items="Model.AvailablePostDoctorate">
+                <option selected="selected" value="">Post Doctorate</option>
+            </select>
+
+            <h1 class="header">Events</h1>
+
+            <select class="custom-select" asp-for="Workshop" asp-items="Model.AvailableWorkshops">
+                <option selected="selected" value="">Workshop</option>
+            </select>
+
+            <select class="custom-select" asp-for="Conference" asp-items="Model.AvailableConferences">
+                <option selected="selected" value="">Conferences</option>
+            </select>
+
+            <h1 class="header">Projects</h1>
+            <h1 class="header">Publications</h1>
+            <select class="custom-select" asp-for="Article" asp-items="Model.AvailableArticles">
+                <option selected="selected" value="">Article</option>
+            </select>
+
+            <select class="custom-select" asp-for="Book" asp-items="Model.AvailableBooks">
+                <option selected="selected" value="">Book</option>
+            </select>
+
+            <select class="custom-select" asp-for="Periodical" asp-items="Model.AvailablePeriodicals">
+                <option selected="selected" value="">Periodical</option>
+            </select>
+            <select class="custom-select" asp-for="Thesis" asp-items="Model.AvailableThesis">
+                <option selected="selected" value="">Thesis</option>
+            </select>
+
+            <button class="btn btn-sm" type="submit">Filter</button>
+            <a class="btn btn-sm" id="clear-filters" asp-controller="Home" asp-action="Reset">Reset</a>
+        </form>
+    </div>
+    <div class="search-results">
+        <form class="results" method="post">
+            @if (Model.Results != null)
+            {
+                <h1 class="header">Results (@Model.Results.Count)</h1>
+            }
+            else
+            {
+                <h1 class="header">Results (0)</h1>
+            }
+
+            @if (Model.Results != null)
+            {
+                for (var i = 0; i < Model.Results.Count(); i++)
+                {
+                    <div class="result">
+                        <a asp-controller="Home" asp-action="Select" asp-route-id="@Model.Results[i].ToString().Replace(' ', '_')">@Model.Results[i].ToString()</a>
+                    </div>
+                }
+            }
+        </form>
+    </div>
+</div>

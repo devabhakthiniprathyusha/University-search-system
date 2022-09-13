@@ -1,0 +1,12 @@
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\bin\Debug\net6.0\ARU.Source.deps.json
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\bin\Debug\net6.0\ARU.Source.dll
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\bin\Debug\net6.0\ref\ARU.Source.dll
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\bin\Debug\net6.0\ARU.Source.pdb
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.csproj.AssemblyReference.cache
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.AssemblyInfoInputs.cache
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.AssemblyInfo.cs
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.csproj.CoreCompileInputs.cache
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.dll
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ref\ARU.Source.dll
+C:\Users\devab\Downloads\new-library-system-master\new-library-system-master\ARU.Source\obj\Debug\net6.0\ARU.Source.pdb

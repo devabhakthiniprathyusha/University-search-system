@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "64a51845-5f6b-4a4d-95a6-15dbbd826c01": {
+      "ProjectGuid": "64a51845-5f6b-4a4d-95a6-15dbbd826c01",
+      "DisplayName": "ARU",
+      "ColorIndex": 0
+    },
+    "89cf92aa-13a6-4701-9410-3d1202edc7bc": {
+      "ProjectGuid": "89cf92aa-13a6-4701-9410-3d1202edc7bc",
+      "DisplayName": "NLS.Lib",
+      "ColorIndex": 1
+    },
+    "19739281-312f-4f9f-b99d-22bdb927b86a": {
+      "ProjectGuid": "19739281-312f-4f9f-b99d-22bdb927b86a",
+      "DisplayName": "ARU.Source",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

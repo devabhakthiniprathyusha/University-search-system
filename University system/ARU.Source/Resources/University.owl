@@ -1,0 +1,2611 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/devab/ontologies/2021/10/ins_ontology-50#"
+     xml:base="http://www.semanticweb.org/devab/ontologies/2021/10/ins_ontology-50"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Institute="http://www.semanticweb.org/devab/ontologies/2021/Institute#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/devab/ontologies/2021/10/ins_ontology-50"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#belongsto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#belongsto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#campushead -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#campushead">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#editorofevents -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#editorofevents">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#eventseditor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#eventseditor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#eventseditor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_article_publication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_article_publication">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#is_published_by"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_author -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_author">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_book_publication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_book_publication">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_discipline -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_discipline">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_gender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_gender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#gender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_principle_investigator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_principle_investigator">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_project_on -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_project_on">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_qualification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_qualification">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_research_interest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_research_interest">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#is_research_interest_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_supervisor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_supervisor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#supervisor_of"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#is_published_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#is_published_by">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#is_research_interest_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#is_research_interest_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#listed_course -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#listed_course">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#pg_student -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#pg_student">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#project_assistantof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#project_assistantof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#researcharea -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#researcharea">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#student">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#supervisor_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#supervisor_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#ug_student -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#ug_student">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#works -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#works">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <owl:inverseOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Dateofbirth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Dateofbirth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Event_attended -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Event_attended">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Firstname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Firstname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#ID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#age -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#age">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#award -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#award">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#city">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#country -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#country">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#has_project_duration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#has_project_duration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#heldon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#heldon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#homepage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#homepage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#lastname -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#lastname">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#phoneno -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#phoneno">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#projectends -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#projectends">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#projectstartedon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#projectstartedon">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#publicationdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#publicationdate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#resourcepersonof -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#resourcepersonof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#salary">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#topicof -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#topicof">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Article -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant_professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant_professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Associate_professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Associate_professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Book">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Events -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Journal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Journal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#MMATH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#MMATH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#MSTAT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#MSTAT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Magazine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Magazine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_program">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Postdoctoral_Programme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postdoctoral_Programme">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Project -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Senior_research_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Senior_research_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Thesis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Thesis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#conference -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#gender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#non_lecture_staff">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#AI_World_Congress_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI_World_Congress_2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Dateofbirth>03-10-1998</Institute:Dateofbirth>
+        <Institute:Event_attended>on_AI</Institute:Event_attended>
+        <Institute:Firstname>Abhijeet</Institute:Firstname>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>abhijeet@student.aru.ac.uk</Institute:email>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#BA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#BA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#BStat_1st_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#BStat_1st_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_1st_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_1st_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_2nd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_2nd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_3rd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_3rd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_4th_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bmath_4th_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bsc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bsc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_2nd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_2nd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_3rd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_3rd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_4th_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Bstat_4th_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#BSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Under_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#CSE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#CSE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Commerce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Commerce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Enterpreneurs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Enterpreneurs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#History -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#History">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#International_conference_on_mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#International_conference_on_mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#International_conference_on_stats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#International_conference_on_stats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>anitha</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src1</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#MA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#MA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:eventseditor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Mathematics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mathematics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_2nd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_2nd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MMATH"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Mstat_1st_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mstat_1st_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Mstat_2nd_year -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mstat_2nd_year">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MSTAT"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Post_graduate_course"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#NLP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#NLP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Operations_research -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Operations_research">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Person1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:Firstname>John</Institute:Firstname>
+        <Institute:ID>D1</Institute:ID>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:email>director1@aru.ac.uk</Institute:email>
+        <Institute:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100000</Institute:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Person2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:Firstname>James</Institute:Firstname>
+        <Institute:ID>D2</Institute:ID>
+        <Institute:city>Chelmsford</Institute:city>
+        <Institute:email>Director2@aru.ac.uk</Institute:email>
+        <Institute:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000000</Institute:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Person3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:Firstname>Alex</Institute:Firstname>
+        <Institute:ID>D3</Institute:ID>
+        <Institute:city>peterborough</Institute:city>
+        <Institute:email>Director3@aru.ac.uk</Institute:email>
+        <Institute:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20000</Institute:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Person4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Administrativestaff"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Director"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:Firstname>steff</Institute:Firstname>
+        <Institute:ID>D4</Institute:ID>
+        <Institute:city>london</Institute:city>
+        <Institute:email>Director4@aru.ac.uk</Institute:email>
+        <Institute:salary rdf:datatype="http://www.w3.org/2001/XMLSchema#int">150000</Institute:salary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_cse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_cse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_math -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_math">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Coursename"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Phd_program"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Physics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Physics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_on_stat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_on_stat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Projecton_Math -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Projecton_Math">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#STAT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#STAT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#Statistics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#Statistics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Discipline"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#The_European_Association_for_Artificial_Inteliigence -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#The_European_Association_for_Artificial_Inteliigence">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#conference"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Article"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_interest"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_topic"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#qualification"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_published_by rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:is_research_interest_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonstats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonstats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Book"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#chelmsford -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#chelmsford">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Journal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_math -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_math">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Journal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_stats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#journal_on_stats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Journal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Periodical"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Publication"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#kajal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#kajal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#london"/>
+        <Institute:ID>ugl1</Institute:ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#kala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>anitha</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src1</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Dateofbirth>03-10-1998</Institute:Dateofbirth>
+        <Institute:Event_attended>on_AI</Institute:Event_attended>
+        <Institute:Firstname>Abhijeet</Institute:Firstname>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:Firstname>vinay</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>jrc1</Institute:ID>
+        <Institute:ID>jrc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>abhijeet@student.aru.ac.uk</Institute:email>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#london -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#london">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_AI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_AI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_computer_vision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_computer_vision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_developing_skills -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_developing_skills">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_maths -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_maths">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#on_stats -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#on_stats">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Events"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#workshop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#peterborough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#peterborough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#peterborough"/>
+        <Institute:ID>ugp2</Institute:ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#project1_on_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#project1_on_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#rahul -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#rahul">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#chelmsford"/>
+        <Institute:ID>ugc1</Institute:ID>
+        <Institute:city>Chemlford</Institute:city>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Dateofbirth>03-10-1998</Institute:Dateofbirth>
+        <Institute:Event_attended>on_AI</Institute:Event_attended>
+        <Institute:Firstname>Abhijeet</Institute:Firstname>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:Firstname>vinay</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>jrc1</Institute:ID>
+        <Institute:ID>jrc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>abhijeet@student.aru.ac.uk</Institute:email>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#sam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#sam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#peterborough"/>
+        <Institute:ID>ugc2</Institute:ID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Dateofbirth>03-10-1998</Institute:Dateofbirth>
+        <Institute:Event_attended>on_AI</Institute:Event_attended>
+        <Institute:Firstname>Abhijeet</Institute:Firstname>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>abhijeet@student.aru.ac.uk</Institute:email>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#shailey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#shailey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Undergraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#speechrecognition_project -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#speechrecognition_project">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:city></Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Campus"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Junior_research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Lecturer"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Postgraduate_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Professor"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Project_assistant"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Research_student"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#student"/>
+        <Institute:belongsto rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#cambridge"/>
+        <Institute:editorofevents rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Machine_Learning_Conference_2021"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_article_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonai"/>
+        <Institute:has_book_publication rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#bookonmath"/>
+        <Institute:has_discipline rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Computerscience"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#female"/>
+        <Institute:has_gender rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#male"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_project_on rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_qualification rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:has_research_interest rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:has_supervisor rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:listed_course rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Mmath_1st_year"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:project_assistantof rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#AI"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Btech"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#MATH"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Msc"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article-on_math"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_ai"/>
+        <Institute:researcharea rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#article_on_stat"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Abhijeet"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#Anitha"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#John"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kala"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#kashvi"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#rakesh"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sarah"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#sunil"/>
+        <Institute:supervisor_of rdf:resource="http://www.semanticweb.org/devab/ontologies/2021/Institute#vinay"/>
+        <Institute:Dateofbirth>03-10-1998</Institute:Dateofbirth>
+        <Institute:Event_attended>on_AI</Institute:Event_attended>
+        <Institute:Firstname>Abhijeet</Institute:Firstname>
+        <Institute:Firstname>Anitha</Institute:Firstname>
+        <Institute:Firstname>Sunil</Institute:Firstname>
+        <Institute:Firstname>kala</Institute:Firstname>
+        <Institute:Firstname>rakesh</Institute:Firstname>
+        <Institute:Firstname>vinay</Institute:Firstname>
+        <Institute:ID>PAc1</Institute:ID>
+        <Institute:ID>Pfc1</Institute:ID>
+        <Institute:ID>Pgc1</Institute:ID>
+        <Institute:ID>Pgc2</Institute:ID>
+        <Institute:ID>jrc2</Institute:ID>
+        <Institute:ID>src2</Institute:ID>
+        <Institute:award>awarded</Institute:award>
+        <Institute:award>awarded gold</Institute:award>
+        <Institute:city></Institute:city>
+        <Institute:city>Cambridge</Institute:city>
+        <Institute:city>cambridge</Institute:city>
+        <Institute:email>abhijeet@student.aru.ac.uk</Institute:email>
+        <Institute:email>anitha@aru.ac.uk</Institute:email>
+        <Institute:email>sunil@aru.ac.uk</Institute:email>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
